@@ -32,7 +32,7 @@ win.geometry(f'{window_width}x{window_height}+{center_x}+{center_y}')
 def display_text():
    global entry
    string= entry.get()
-   if len(string)==1:
+   if (word)==1:
        response = urlopen("http://www.spanishdict.com/translate/" + string + "/")
        soup = BeautifulSoup(response.read(), "html.parser")
        #print(soup)
